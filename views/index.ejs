@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <% include partials/head %> 
+</head>
+<body>
+<% include partials/menu %>
+
+<div class="container-fluid bg-3 text-center">    
+  <h2>Benvenuti su Openshift!</h2><br>
+  <div class="row">
+    <div class="col-">
+      <h3>l'architettura è <%= arch %></h3><br>
+      <h3>il sistema operativo è <%= so %></h3><br>
+      <h3>l'hostname è <%= hostname %></h3><br>
+      <h3>la versione del kernel è <%= kernel %></h3><br>
+    </div>
+  </div>
+</div>
+
+</body>
+<% include partials/script %>
+</html>
