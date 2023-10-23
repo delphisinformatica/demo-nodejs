@@ -5,6 +5,8 @@ var system = process.arch
 
 var os = require('os');
 
+var pippo = process.env.pippo
+
 if(system === "x64") {
    system = "Intel"
 } else if (system === "s390x") {
@@ -12,7 +14,7 @@ if(system === "x64") {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', {page:'Demo Openshift', menuId:'home', arch:system, so:os.platform(), hostname:os.hostname(), kernel:os.release()});
+  res.render('index', {page:'Demo Openshift', menuId:'home', arch:system, so:os.platform(), hostname:os.hostname(), kernel:os.release(), pippo:pippo});
 });
 
 module.exports = router;
