@@ -14,7 +14,7 @@ if(system === "x64") {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', {page:'Demo Openshift', menuId:'home', arch:system, so:os.platform(), hostname:os.hostname(), kernel:os.release(), pippo:pippo});
+  res.render('index', {page:'Demo Openshift modificata', menuId:'home', arch:system, so:os.platform(), hostname:os.hostname(), kernel:os.release(), pippo:pippo});
 });
 
 module.exports = router;
